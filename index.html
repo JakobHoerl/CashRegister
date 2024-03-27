@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kassa</title>
+    <link href="cash.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="cash-box">
+      <label for="cash" class="input">
+        <input id="cash" value="" placeholder="Kundengeld" readonly />
+        <div id="extender"></div>
+      </label>
+      <div class="price">
+        <p id="price"></p>
+      </div>
+      <div class="button-container">
+        <button class="light-blue">Feed</button>
+        <button class="light-blue">Prog</button>
+        <button id="back-space" class="red">Back-Space</button>
+        <button id="clear" class="red">Clear</button>
+        <button class="yellow">Dept</button>
+
+        <button class="green">Shift</button>
+        <button class="number">7</button>
+        <button class="number">8</button>
+        <button class="number">9</button>
+        <button class="yellow">Dept 1</button>
+
+        <button class="green">Print</button>
+        <button class="number">4</button>
+        <button class="number">5</button>
+        <button class="number">6</button>
+        <button class="yellow">Dept 2</button>
+
+        <button class="green">Charge</button>
+        <button class="number">1</button>
+        <button class="number">2</button>
+        <button class="number">3</button>
+        <button class="yellow">Dept 3</button>
+
+        <button class="green">TAX</button>
+        <button class="number">0</button>
+        <button class="number">00</button>
+        <button class="number">.</button>
+        <button class="yellow">Dept 4</button>
+      </div>
+
+      <div class="second-container">
+        <button id="debit-card" class="green">Debit Card</button>
+        <button id="cash-btn" class="yellow">Cash</button>
+        <button id="pay-completed">Payment Completed</button>
+      </div>
+
+      <div class="sheet">
+        <div class="span-container" id="EIN-CENT">
+          <span class="Währung"></span>
+          <span class="Summe"></span>
+        </div>
+        <div class="span-container" id="ZWEI-CENT">
+          <span class="Währung"></span>
+          <span class="Summe"></span>
+        </div>
+        <div class="span-container" id="FÜNF-CENT">
+          <span class="Währung"></span>
+          <span class="Summe"></span>
+        </div>
+        <div class="span-container" id="ZEHN-CENT">
+          <span class="Währung"></span>
+          <span class="Summe"></span>
+        </div>
+        <div class="span-container" id="ZWANZIG-CENT">
+          <span class="Währung"></span>
+          <span class="Summe"></span>
+        </div>
+        <div class="span-container" id="FÜNFZIG-CENT">
+          <span class="Währung"></span>
+          <span class="Summe"></span>
+        </div>
+        <div class="span-container" id="EINS">
+          <span class="Währung"></span>
+          <span class="Summe"></span>
+        </div>
+        <div class="span-container" id="ZWEI">
+          <span class="Währung"></span>
+          <span class="Summe"></span>
+        </div>
+        <div class="span-container" id="FÜNF">
+          <span class="Währung"></span>
+          <span class="Summe"></span>
+        </div>
+        <div class="span-container" id="ZEHN">
+          <span class="Währung"></span>
+          <span class="Summe"></span>
+        </div>
+        <div class="span-container" id="ZWANZIG">
+          <span class="Währung"></span>
+          <span class="Summe"></span>
+        </div>
+        <div class="span-container" id="FÜNFZIG">
+          <span class="Währung"></span>
+          <span class="Summe"></span>
+        </div>
+        <div class="span-container" id="EIN-HUNDERT">
+          <span class="Währung"></span>
+          <span class="Summe"></span>
+        </div>
+        <div class="span-container" id="ZWEI-HUNDERT">
+          <span class="Währung"></span>
+          <span class="Summe"></span>
+        </div>
+      </div>
+      <div id="cash-drawer">
+        <div class="key"></div>
+      </div>
+    </div>
+    <div id="change-due"></div>
+
+    <script src="cash.js"></script>
+  </body>
+</html>
