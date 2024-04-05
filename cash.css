@@ -9,6 +9,17 @@ body {
   flex-direction: row;
   align-items: center;
 }
+.instruction-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.instructions {
+  color: white;
+
+  text-align: center;
+}
 
 .input {
   top: -73px;
@@ -199,6 +210,9 @@ body {
 }
 
 @media all and (max-width: 700px) {
+  .instructions {
+    display: none;
+  }
   .cash-box {
     width: 400px;
   }
