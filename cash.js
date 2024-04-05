@@ -31,7 +31,7 @@ const values = {
   "EIN-HUNDERT": 10000,
   "ZWEI-HUNDERT": 20000,
 };
-
+const instructions = document.querySelector(".instruction-container");
 const cash = document.getElementById("cash");
 const button = document.getElementById("purchase-btn");
 const changeDue = document.getElementById("change-due");
@@ -210,6 +210,7 @@ cashBtn.addEventListener("click", () => {
 
 numberBtn.forEach((btn) => {
   btn.addEventListener("click", (e) => {
+    instructions.innerText = "";
     if (ongoingPayment) {
       alert(
         "Schließen sie die derzeitige Transaktion ab, bevor sie einen neuen Betrag eingeben."
