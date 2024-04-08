@@ -210,7 +210,7 @@ cashBtn.addEventListener("click", () => {
 
 numberBtn.forEach((btn) => {
   btn.addEventListener("click", (e) => {
-    instructions.innerText = "";
+    instructions.remove();
     if (ongoingPayment) {
       alert(
         "Schließen sie die derzeitige Transaktion ab, bevor sie einen neuen Betrag eingeben."
