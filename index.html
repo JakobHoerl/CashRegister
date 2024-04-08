@@ -7,12 +7,7 @@
     <link href="cash.css" rel="stylesheet" />
   </head>
   <body>
-    <div class="instruction-container">
-      <h1 class="instructions">
-        Bitte geben sie mithilfe der Tasten der Kassa den Gelbetrag des Kunden
-        ein, damit das Programm das Wechselgeld berechnen kann.
-      </h1>
-    </div>
+   
     <div class="cash-box">
       <label for="cash" class="input">
         <input id="cash" value="" placeholder="Kundengeld" readonly />
@@ -121,7 +116,14 @@
         <div class="key"></div>
       </div>
     </div>
-    <div id="change-due"></div>
+    <div id="change-due">
+       <div class="instruction-container">
+      <h1 class="instructions">
+        Bitte geben sie mithilfe der Tasten der Kassa den Gelbetrag des Kunden
+        ein, damit das Programm das Wechselgeld berechnen kann.
+      </h1>
+    </div>
+    </div>
 
     <script src="cash.js"></script>
   </body>
